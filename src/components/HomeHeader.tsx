@@ -52,16 +52,26 @@ export default function HomeHeader () {
           </ul>
           <div>
             {' '}
-            <i
-              className='fa-solid fa-bars md:hidden sm:block text-[30px] relative'
-              onClick={() => {
-                setState(status)
-              }}
-            ></i>
+            <div
+              className='flex
+            items-center justify-between '
+            >
+              {' '}
+              <i
+                className='fa-solid fa-bars md:hidden sm:block text-[30px] relative mr-2'
+                onClick={() => {
+                  setState(status)
+                }}
+              ></i>
+              <Link to='/Cart' className={` md:block cursor-pointer`}>
+                {' '}
+                <div>Cart</div>
+              </Link>
+            </div>
             <ul
               className={`xs:${
                 status.status ? 'block' : 'hidden'
-              } md:hidden text-black sm:w-[100%] left-0 cursor-pointer absolute py-3`}
+              } md:hidden text-black xs:w-[100%] left-0 cursor-pointer absolute py-3 z-10`}
             >
               <Link to='/'>
                 {' '}
@@ -77,16 +87,6 @@ export default function HomeHeader () {
               <li className='bg-[#ddd] p-3 hover:bg-slate-500'>Purchase</li>
             </ul>
           </div>
-          <Link to='/Cart'>
-            {' '}
-            <div
-              className={`xs:${
-                status.status ? 'block' : 'hidden'
-              } md:block cursor-pointer`}
-            >
-              Cart
-            </div>
-          </Link>
         </div>
       </div>
     </div>

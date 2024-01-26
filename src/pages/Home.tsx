@@ -18,8 +18,8 @@ export default function Home () {
             alt=''
             className='md:w-[55%] sm:w-[100%] xs:hidden md:block'
           />
-          <div className='text-white md:ml-[40px] sm:ml-0 sm:mt-5'>
-            <div className='font-bold xl:text-[60px] sm:text-[45px] xs:text-[28px]'>
+          <div className='text-white md:ml-[40px] sm:ml-0 sm:mt-5 relative z-0'>
+            <div className='font-bold-1 font-bold xl:text-[60px] sm:text-[45px] xs:text-[28px]'>
               Discover, Collect &<br /> Sell{' '}
               <strong className='bg-gradient-to-r from-pink-500 to-indigo-500 w-full h-20 bg-clip-text text-transparent'>
                 Extraordinary

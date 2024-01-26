@@ -40,10 +40,13 @@ button{
 
   
 }
-@media (min-width: 280px) and (max-width: 450px) {
-  *{
-    scale: 1;
+@media (min-width:340px) and (max-width: 640px){
+  .container{
+    max-width: 500px !important;
   }
+}
+@media (min-width: 280px) and (max-width: 630px) {
+
   button{
     font-size: 12px;
     font-weight: 400;
@@ -54,7 +57,11 @@ button{
   }
 }
 
-
+@media (max-width: 1025px) {
+  .font-bold-1{
+    font-size: 30px;
+  }
+}
 .css-1l9ohcm{
   border: none !important;
   background-color: rgb(19, 20, 24) !important;

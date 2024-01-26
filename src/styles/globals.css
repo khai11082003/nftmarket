@@ -11,6 +11,7 @@ body {
 
 html {
   color-scheme: dark;
+  
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   --card-background: #252133;
   --highlighted-background: #202326;
   font-weight: 400;
+  
 }
 
 h1 {
