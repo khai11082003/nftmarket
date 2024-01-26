@@ -4,6 +4,7 @@ import React from 'react'
 import HomeHeader from '../components/HomeHeader'
 // import { useParams } from 'react-router-dom'; // Sử dụng useParams để lấy thông tin từ URL
 import styles from '../styles/Token.module.css'
+import BasicModal from './components/model'
 
 interface Product {
   id: number
@@ -34,10 +35,13 @@ const ProductDetail: React.FC = () => {
   const [bidValue, setBidValue] = React.useState<string>()
 
   //   }
+  const [open, setOpen] = React.useState(false)
+  const handleOpen = () => setOpen(true)
 
   return (
     <div className='bg-[#000000d6] text-white'>
       <HomeHeader />
+      <BasicModal open={open} setOpen={setOpen} />
       <div className='container mx-auto py-[30px]'>
         <div className=' rounded-lg shadow-lg lg:flex sm:block justify-between  '>
           <img
@@ -66,7 +70,10 @@ const ProductDetail: React.FC = () => {
               <br />
               {product.price}
             </div>
-            <div className='bg-[#fff] text-black text-center py-[10px] rounded-[10px] border-[1px] hover:bg-[#0000] hover:text-white transition duration-300 cursor-pointer'>
+            <div
+              onClick={handleOpen}
+              className='bg-[#fff] text-black text-center py-[10px] rounded-[10px] border-[1px] hover:bg-[#0000] hover:text-white transition duration-300 cursor-pointer'
+            >
               Connect Wallet
             </div>
             <div className='mt-4 text-center mb-4'>or</div>

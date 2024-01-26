@@ -53,3 +53,48 @@ button{
     margin-right: 10px;
   }
 }
+
+
+.css-1l9ohcm{
+  border: none !important;
+  background-color: rgb(19, 20, 24) !important;
+  border-radius: 12px;
+  padding: 0px !important;
+
+
+}
+.css-1l9ohcm:focus{
+  outline: none !important;
+}
+.css-1xn7moh {
+    color: rgb(51, 133, 255);
+    filter: drop-shadow(rgb(51, 133, 255) 0px 6px 10px);
+    animation: 1s ease 0s infinite alternate none running animation-1w3cu63;
+}
+@keyframes animation-1w3cu63 {
+0%{
+  transform: translateY(6px);
+}  
+100%{
+  transform: translateY(-4px);
+}
+}
+.css-19oz2tc[data-error="true"] [data-img-container]::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: rgb(229, 77, 46);
+  animation: 1.5s ease 0s infinite normal none running animation-1j95wxd;
+  border-radius: 20px;
+  z-index: -1;
+}
+@keyframes animation-1j95wxd {
+  0% {
+    transform: scale(0.95);
+}
+
+100% {
+    opacity: 0;
+    transform: scale(1.4);
+}
+}
