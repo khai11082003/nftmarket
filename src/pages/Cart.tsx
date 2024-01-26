@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeHeader from '../components/HomeHeader'
+import { Link } from 'react-router-dom'
 
 export default function Cart () {
   const cartItems = [
@@ -10,7 +11,10 @@ export default function Cart () {
   return (
     <div>
       <div className='container mx-auto my-8'>
-        <h1 className='text-3xl font-semibold mb-[50px]'>NFT Cart</h1>
+        <div className=' mb-[50px] flex items-center justify-between'>
+          <h1 className='text-3xl font-semibold'>NFT Cart</h1>
+          <Link to='/'>Back to Home</Link>
+        </div>
 
         {false ? (
           <p>Your cart is empty.</p>
